@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head> 
+   <link rel = "stylesheet" href = "./css/exp.css" > 
+</head>
+    <body>
+		<!-- Your code goes here-->
+        <div class="main-container">
+            <div class="header">
+                <a href="#" id="logo"><img src="images/copy_creative.jpg" alt=""></a>
+                <nav class="navbar">
+                    <a href="index.html">Home</a>
+                    <a href="Aim.html">Aim</a>
+                    <a href="theory.html">Theory</a>
+                    <a href="Procedure.html">Procedure</a>
+                    <a href="simulation.html">Simulation</a>
+                    <a href="Conclusion.html">Conclusion</a>
+                    <a href="AboutUs.html">About Us</a>
+                </nav>
+            </div>   
+            <div class="main" id="experiment-article-section-4-content" text - center  >
+                <center>
+                <h2><i><b>"Mono-Alphabetic Cipher"</b></i></h2>
+                <br>
+                <p style = "color :#4a2063; font-size: 1.3pc; font-family: 'Times New Roman', Times, serif;"><b>Plaintext :</b>
+                    <br>
+                    <textarea cols="50" id="p" name="p" rows="2">IANS Practical 10</textarea>
+                    <br>
+                </p>
+                <br>
+                <br>
+                <p style = "font-size: 1.12pc; ">KEY =
+                    <input id="key" maxchars="25" name="key"  size="40" type="text" value="phqgiumeaylnofdxjkrcvstzwb">
+                    <input name="genKey" onclick="Mono_GenRandKey()" type="button" value="Generate Random Key">
+                </p>
+                <br>
+                <br>
+                <div>
+                    <button class = "btnEn" onclick="Mono_Encrypt()">v Encrypt</button>
+                    <button class = "btnDe" onclick="Mono_Decrypt()">^ Decrypt</button>
+                </div>
+                <br>
+                <br>
+                <p>
+                    <input id="punc" name="punc" type="checkbox"> Remove Punctuation</p>
+                    <br>
+                    <br>
+                <p style = "color :#4a2063; font-size: 1.3pc; font-family: 'Times New Roman', Times, serif;"><b>Ciphertext :</b>
+                    <br>
+                    <textarea cols="50" id="c" name="c" rows="2"></textarea>
+                    <br>
+                </p>
+                </center>
+            </div>
+                             
+            
+        </div>
+        <script src="C:\Users\Vidisha\Desktop\sagar-web\exp2.js"></script>
+        <script src="../assets/js/iframeResize.js"></script>
+    </body>
+</html>

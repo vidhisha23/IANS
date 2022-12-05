@@ -1,0 +1,110 @@
+body{
+    background-color: #FDEBD0 ;
+}
+:root{
+    --btnclr:#f42267;
+    --sectionclr:#4b2d7f;
+    --sectionclrsec:#40286a;
+    --boxshadow:#ff5990;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+.main-container{
+    background: url(images/back.png);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.header{
+    padding: 2rem 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+}
+.header #logo img{
+    width: 200px;
+}
+.navbar a{
+font-size: 1.5rem;
+color: rgb(0, 0, 0);
+margin-left: 1.5rem;
+}
+.navbar.active{
+    left: 0;
+}
+
+.background-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 50%;
+}
+.main h1{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.main h2{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+}
+.main h4{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.main h3{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: bold;
+    left: 50 px;
+}
+.main p{
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+}
+.main a{
+    padding: 1rem 3rem;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-right: 1rem;
+}
+.first-btn{
+    background: var(--btnclr);
+}

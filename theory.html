@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Theory</title>
+        <link rel="stylesheet" href="./css/theorystyle.css">
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="header">
+                <a href="#" id="logo"><img src="images/copy_creative.jpg" alt=""></a>
+                <nav class="navbar">
+                    <a href="index.html">Home</a>
+                    <a href="Aim.html">Aim</a>
+                    <a href="theory.html">Theory</a>
+                    <a href="Procedure.html">Procedure</a>
+                    <a href="simulation.html">Simulation</a>
+                    <a href="Conclusion.html">Conclusion</a>
+                    <a href="AboutUs.html">About Us</a>
+                </nav>
+            </div>
+            <div class="background-text">
+                <div class="main">
+                    <h1>Theory</h1>
+                    <p style = "font-size: 1.3pc; ">
+                    A mono-alphabetic cipher (aka simple substitution cipher) is a substitution cipher where each letter of the plain text is replaced with another letter of the alphabet.
+                    It uses a fixed key which consist of the 26 letters of a “shuffled alphabet”.<br>
+                    This type of cipher is a form of symmetric encryption as the same key can be used to both encrypt and decrypt a message.<br>
+                    Examples of monoalphabetic ciphers would include the Caesar Cipher, where each letter is shifted based on a numeric key. 
+                    <br>
+                    <br>
+                    <br>
+                    <h3>Cryptanalysis</h3><br>
+                    <p align="justify" style = "font-size: 1.3pc; ">
+                        <ol>
+                            <li style="font-size: 1.21pc;"><p style = "font-size: 1.3pc; ">Frequency analysis is one of the known ciphertext attacks. 
+                                It is based on the study of the frequency of letters or groups of letters in a ciphertext. 
+                                In all languages, different letters are used with different frequencies.
+                            </p></li>
+                            <li style="font-size: 1.21pc;"">
+                                <p style = "font-size: 1.3pc; " >
+                                The frequency array attack is based on the observation that in an English text,
+                                 not all letters occur with the same frequency.
+                                </p>
+                            </li>
+                            <li style="font-size: 1.21pc;">
+                                <p style = "font-size: 1.3pc; ">Therefore, the idea is to find the difference between ith maximum occurring letter in the given string and the string T and then shift all the letters of the given string with that difference.
+                                     The string obtained will be one of the possible decrypted strings.
+                                </p>
+                            </li>
+                        </ol>
+                    </p><br>
+                    </p>
+                    <br>
+                    <h3>Example: </h3><br>
+                    <p style = "font-size: 1.21pc; ">
+                    Consider we have the plain text "monoalphabetic". 
+                    By using the substitution table below:   </p>
+                    <table name="eg">
+                        <tr>
+                            <td>a</td>
+                            <td>b</td>
+                            <td>c</td>
+                            <td>d</td>
+                            <td>e</td>
+                            <td>f</td>
+                            <td>g</td>
+                            <td>h</td>
+                            <td>i</td>
+                            <td>j</td>
+                            <td>k</td>
+                            <td>l</td>
+                            <td>m</td>
+                            <td>n</td>
+                            <td>o</td>
+                            <td>p</td>
+                            <td>q</td>
+                            <td>r</td>
+                            <td>s</td>
+                            <td>t</td>
+                            <td>u</td>
+                            <td>v</td>
+                            <td>w</td>
+                            <td>x</td>
+                            <td>y</td>
+                            <td>z</td>
+                        </tr>
+                    
+                        <tr>
+                            <td>↓</td>
+                            <td>↓</td>
+                            <td>↓</td>
+                            <td>↓</td>
+                            <td>↓</td>
+                            <td>↓</td>
+                            <td>↓</td>
+                            <td>↓</td>
+                            <td>↓</td>
+                            <td>↓</td>
+                            <td>↓</td>
+                            <td>↓</td>
+                            <td>↓</td>
+                            <td>↓</td>
+                            <td>↓</td>
+                            <td>↓</td>
+                            <td>↓</td>
+                            <td>↓</td>
+                            <td>↓</td>
+                            <td>↓</td>
+                            <td>↓</td>
+                            <td>↓</td>
+                            <td>↓</td>
+                            <td>↓</td>
+                            <td>↓</td>
+                            <td>↓</td>
+                        </tr>
+                        <tr>   
+                            <td>q</td>
+                            <td>w</td>
+                            <td>e</td>
+                            <td>r</td>
+                            <td>t</td>
+                            <td>y</td>
+                            <td>u</td>
+                            <td>i</td>
+                            <td>o</td>
+                            <td>p</td>
+                            <td>a</td>
+                            <td>s</td>
+                            <td>d</td>
+                            <td>f</td>
+                            <td>g</td>
+                            <td>h</td>
+                            <td>j</td>
+                            <td>k</td>
+                            <td>l</td>
+                            <td>z</td>
+                            <td>x</td>
+                            <td>c</td>
+                            <td>v</td>
+                            <td>b</td>
+                            <td>n</td>
+                            <td>m</td>
+                        </tr>
+                    </table>
+                    <p style = "font-size: 1.21pc; ">
+                        <br>
+                        <br>We see here , From the table we can infer that, 'q' will be subtituted in place of 'a', 'w' will be substituted in place of 'b'.. so on and so forth. 
+                        <br>so, we are having our plain text as ~ "monoalphabetic" ,<br> substituting the chars according to the key, such as 'm' will be subtituted as 'd', 'o' will be substituted as 'g'.. so on so forth
+                        <br>
+                        <br>Accordingly we obtain our cipher text as "dgfgqshiqwtzoe"
+                        <br>
+                        
+                    </p>
+                    <br>
+                    <br>
+                    <h3>Video</h3>
+                    <br>
+                    <p style="font-size: 1.21pc;"> <br>For further more clarification, click on the button below, to watch the Video </p>
+                    <br>
+                    <br>
+                    <a href="https://youtu.be/lWBuC-WuI04" class="first-btn" center>Watch Video</a><br>
+                    <br>
+                    <br>
+                        
+                        <h3> Algorithm </h3><br>
+                        <p align="justify" style="font-size: 1.21pc;">
+                            for i=0 to msg[i] = '10'<br>
+                            ch = msg[i]<br>
+                            if(ch >='a' and ch <='z')<br>
+                            ch = ch + key<br>
+                            if ( ch > 'z')
+                            ch = ch - 'z' + 'a' - 1 <br>
+                            msg[i] = ch<br>
+                            endif<br>
+                            endf<br>
+                            print Encrypted message<br>
+                            endfor<br>
+                        </p><br><br>
+                        <h3> Flowchart </h3><br>
+                        <br>
+                        <br>
+                        <center><img src="C:\Users\Vidisha\Desktop\sagar-web\images\1.jpg" style="width:70%;height:70%;"></center><br><br>
+                </div>
+            </div>
+        </div>
+            
+    </body>
+</html>
